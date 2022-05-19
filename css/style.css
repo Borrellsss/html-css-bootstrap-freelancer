@@ -1,7 +1,18 @@
 /* DEBUG */
-
-
+.ms_jumbotron {
+    background-color: #1abc9c;
+}
+.ms_container {
+    background-color: aqua;
+    height: 100%;
+}
+.ms_card {
+    background-color: yellow;
+}
 /* COMMON */
+.ms_container {
+    margin: 0 auto;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -31,4 +42,21 @@ header .d-flex > li {
 }
 .ms_burger {
     font-size: 1.5rem;
+}
+
+/* MAIN */
+/* JUMBOTRON */
+.ms_jumbotron {
+    height: 40vh;
+}
+.ms_jumbotron .ms_container {
+    max-width: 600px;
+}
+
+/* PORTFOLIO */
+.ms_star {
+    margin-bottom: 1rem;
+}
+.ms_portfolio {
+    padding: 2rem 0;
 }
