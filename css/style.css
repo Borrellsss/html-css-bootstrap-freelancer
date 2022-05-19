@@ -16,8 +16,12 @@
 :root {
     --section-margin: 0.5rem;
     --section-padding: 2rem;
+    --txt-color: #333;
 }
 /* COMMON */
+body {
+    color: white;
+}
 .ms_container {
     margin: 0 auto;
 }
@@ -35,7 +39,6 @@ a {
 header {
     height: 60px;
     font-weight: 600;
-    color: white;
     background-color: #2c3e50;
 }
 header ul {
@@ -53,28 +56,55 @@ header .d-flex > li {
 }
 
 /* MAIN */
+.ms_star {
+    margin-bottom: 1rem;
+}
 /* JUMBOTRON */
 .ms_jumbotron {
-    height: 40vh;
+    height: 70vh;
 }
 .ms_jumbotron .ms_container {
     max-width: 600px;
 }
 
 /* PORTFOLIO */
-.ms_star {
-    margin-bottom: 1rem;
-}
 .ms_portfolio {
     padding: var(--section-padding) 0;
+    color: var(--txt-color);
 }
 
 /* ABOUT */
 .ms_about {
     padding: var(--section-padding) 0;
-    color: white;
     background-color: #1abc9c;
 }
-.ms_about .ms_container {
+.ms_about > .ms_container {
     width: 50%;
+}
+
+/* CONTACT ME */
+.ms_contact-me {
+    padding: var(--section-padding) 0;
+    color: var(--txt-color);
+}
+.ms_contact-me > .ms_container {
+    width: 50%;
+}
+.ms_contact-me .ms_card {
+    border-bottom: 1px solid lightgrey;
+}
+.ms_message {
+    border-bottom: 1px solid lightgrey;
+}
+
+/* MAIN INFO */
+.ms_main-info {
+    padding: var(--section-padding) 0;
+    background-color: #3a546d;
+}
+
+/* FOOTER */
+footer {
+    padding: var(--section-padding) 0;
+    background-color: #2c3e50;
 }
