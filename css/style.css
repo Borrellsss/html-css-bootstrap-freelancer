@@ -9,6 +9,14 @@
 .ms_card {
     background-color: yellow;
 }
+.ms_btn {
+    margin-top: var(--section-margin);
+}
+/* VARIABLES */
+:root {
+    --section-margin: 0.5rem;
+    --section-padding: 2rem;
+}
 /* COMMON */
 .ms_container {
     margin: 0 auto;
@@ -58,5 +66,15 @@ header .d-flex > li {
     margin-bottom: 1rem;
 }
 .ms_portfolio {
-    padding: 2rem 0;
+    padding: var(--section-padding) 0;
+}
+
+/* ABOUT */
+.ms_about {
+    padding: var(--section-padding) 0;
+    color: white;
+    background-color: #1abc9c;
+}
+.ms_about .ms_container {
+    width: 50%;
 }
