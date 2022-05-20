@@ -128,33 +128,46 @@
 
         <!-- ABOUT -->
         <section class="ms_about">
+            <!-- CUSTOM CONTAINER -->
             <div class="ms_container">
                 <!-- BOOTSTRAP CONTAINER -->
                 <div class="container-fluid">
                     <!-- ABOUT TITLE -->
-                    <h2 class="text-center">ABOUT</h2>
-
-                    <!-- STELLA -->
-                    <div class="ms_star text-center">STELLA</div>
+                    <div class="text-center">
+                        <h2 class="text-center">ABOUT</h2>
+                        <!-- CUSTOM STAR -->
+                        <span class="ms_star">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
 
                     <!-- BOOTSTRAP ROW -->
                     <div class="row g-3 row-cols-1 row-cols-md-2">
                         <!-- BOOTSTRAP COLUMNS -->
                         <div class="col">
                             <div class="ms_card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro ex eius facere a molestiae quaerat suscipit quia rerum, beatae nihil cumque maiores laboriosam sunt tempore error possimus perferendis et!
+                                <p>
+                                    Freelancer is a free Bootstrap them created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+                                </p>
                             </div>
                         </div>
                         
                         <div class="col">
                             <div class="ms_card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro ex eius facere a molestiae quaerat suscipit quia rerum, beatae nihil cumque maiores laboriosam sunt tempore error possimus perferendis et!
+                                <p>
+                                    Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <!-- ABOUT BUTTON -->
-                    <div class="ms_btn text-center">BUTTON</div>
+                    <div class="text-center">
+                        <a class="btn btn-sm btn-outline-primary" href="#">
+                            <i class="fa-solid fa-download"></i>
+                            Download
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -162,80 +175,127 @@
 
         <!-- CONTACT ME -->
         <section class="ms_contact-me">
-            <div class="ms-container">
+            <!-- CUSTOM CONTAINER -->
+            <div class="ms_container">
                 <!-- BOOTSTRAP CONTAINER -->
                 <div class="container-fluid">
                     <!-- CONTACT ME TITLE -->
-                    <h2 class="text-center">CONTACT ME</h2>
-
-                    <!-- STELLA -->
-                    <div class="ms_star text-center">STELLA</div>
-
-                    <!-- BOOTSTRAP ROW -->
-                    <div class="row row-cols-1">
-                        <!-- BOOTSTRAP COLUMNS -->
-                        <div class="col">
-                            <div class="ms_card">
-                                Name
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="ms_card">
-                                Email Address
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="ms_card">
-                                Phone Number
-                            </div>
-                        </div>
+                    <div class="text-center">
+                        <h2 class="text-center">CONTACT ME</h2>
+                        <!-- CUSTOM STAR -->
+                        <span class="ms_star">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
                     </div>
 
-                    <span class="message">Message</span>
-
-                    <!-- CONTACT ME BUTTON -->
-                    <div class="ms_btn">BUTTON</div>
+                    <!-- CONTACT ME FORM -->
+                    <form>
+                        <!-- NAME  -->
+                        <div class="mb-3">
+                            <label for="Name" class="form-label visually-hidden">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                        </div>
+                        <!-- EMAIL -->
+                        <div class="mb-3">
+                            <label for="Email Address" class="form-label visually-hidden">Email Address</label>
+                            <input type="email" class="form-control" id="Email Address" placeholder="Email Address">
+                        </div>
+                        <!-- NUMBER -->
+                        <div class="mb-3">
+                            <label for="Phone Number" class="form-label visually-hidden">Phone Number</label>
+                            <input type="tel" class="form-control" id="Phone Number" placeholder="Phone Number">
+                        </div>
+                        <!-- MESSAGE -->
+                        <div class="mb-3">
+                            <label for="Message" class="form-label visually-hidden">Message</label>
+                            <textarea class="form-control" id="Message1" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <!-- CONTACT ME BUTTON -->
+                        <button type="submit" class="btn btn-sm btn-primary">Send</button>
+                      </form>
                 </div>
             </div>
         </section>
         <!-- CONTACT ME END -->
+    </main>
+    <!-- MAIN END -->
 
-        <!-- MAIN INFO -->
-        <section class="ms_main-info">
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <!-- FOOTER INFO -->
+        <div class="ms_footer-info">
             <!-- BOOTSTRAP CONTAINER -->
             <div class="container">
                 <!-- BOOTSTRAP ROW -->
                 <div class="row g-4 row-cols-1 row-cols-md-3">
                     <!-- BOOTSTRAP COLUMNS -->
                     <div class="col">
-                        <div class="ms_card text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et, ratione omnis blanditiis dignissimos, quod at dicta molestias, magnam cumque quo. Animi harum similique officia nemo eos maiores velit earum.
+                        <div class="ms_card">
+                            <!-- FOOTER CARD TITLE -->
+                            <h4>LOCATION</h4>
+                            <!-- FOOTER CARD CONTENT -->
+                            <p>2215 John Daniel Drive Clark, MO 54243</p>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="ms_card text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et, ratione omnis blanditiis dignissimos, quod at dicta molestias, magnam cumque quo. Animi harum similique officia nemo eos maiores velit earum.
+                        <div class="ms_card">
+                            <!-- FOOTER CARD TITLE -->
+                            <h4>AROUND THE WEB</h4>
+                            <!-- FOOTER SOCIALS -->
+                            <ul class="ms_footer-socials d-flex justify-content-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="ms_card text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et, ratione omnis blanditiis dignissimos, quod at dicta molestias, magnam cumque quo. Animi harum similique officia nemo eos maiores velit earum.
+                        <div class="ms_card">
+                            <!-- FOOTER CARD TITLE -->
+                            <h4>ABOUT FREELANCER</h4>
+                            <!-- FOOTER CARD CONTENT -->
+                            <p>
+                                Freelance is a free to use, open source Bootstrap theme created by
+                                <a class="ms_start" href="#">Start Bootstrap</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- MAIN INFO END -->
-    </main>
-    <!-- MAIN END -->
-
-    <!-- FOOTER -->
-    <footer class="text-center">
-        <span>testtestetstetsttetstetts</span>
+        </div>
+        <!-- FOOTER INFO END -->
+        
+        <!-- FOOTER BOTTOM -->
+        <div class="ms_footer-bottom">
+            <span>
+                Copyright
+                <span>&#169;</span>
+                Your Website 2019
+            </span>
+        </div>
+        <!-- FOOTER BOTTOM END -->
     </footer>
     <!-- FOOTER END -->
 </body>

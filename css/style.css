@@ -1,10 +1,4 @@
 /* DEBUG */
-.ms_card {
-    background-color: yellow;
-}
-.ms_btn {
-    margin-top: var(--section-margin);
-}
 
 /* VARIABLES */
 :root {
@@ -20,6 +14,8 @@ body {
 }
 .ms_container {
     margin: 0 auto;
+    max-width: 1700px;
+    width: 65%;
 }
 ul {
     margin: 0;
@@ -30,17 +26,56 @@ a {
     color: inherit;
     text-decoration: none;
 }
-a:hover {
-    color: lightskyblue;
-}
 h1 {
     font-weight: 600;
+}
+h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1rem;
 }
 img {
     width: 100%;
     display: block;
 }
-
+.btn {
+    margin-top: var(--section-margin);
+}
+.btn:active {
+    background-color: inherit;
+}
+.btn-primary:active {
+    color: white;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+.btn:focus,
+.btn:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+.btn-primary:focus,
+.bt-primary:focus-visible {
+    color: white;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.form-control:focus,
+.form-control:focus-visible {
+    border-bottom: none;
+    box-shadow: 0 0 4px lightgrey;
+    outline: none;
+}
 /* HEADER */
 header {
     height: 60px;
@@ -59,6 +94,9 @@ header .d-flex > li {
 }
 .ms_burger {
     font-size: 1.5rem;
+}
+header a:hover {
+    color: #1abc9c;
 }
 
 /* MAIN */
@@ -120,13 +158,22 @@ header .d-flex > li {
 .ms_portfolio img {
     border-radius: 1rem;
 }
+
 /* ABOUT */
 .ms_about {
     padding: var(--section-padding) 0;
     background-color: #1abc9c;
 }
-.ms_about > .ms_container {
-    width: 50%;
+.ms_about .btn {
+    color: white;
+    border-color: white;
+}
+.ms_about .btn:hover {
+    color: #1abc9c;
+    /* text-shadow: 0 0 3px #1abc9c; */
+    background-color: white;
+    border-color: #1abc9c;
+    box-shadow: 0 0px 5px white;
 }
 
 /* CONTACT ME */
@@ -134,24 +181,54 @@ header .d-flex > li {
     padding: var(--section-padding) 0;
     color: var(--txt-color);
 }
-.ms_contact-me > .ms_container {
-    width: 50%;
+form .btn {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }
-.ms_contact-me .ms_card {
-    border-bottom: 1px solid lightgrey;
-}
-.ms_message {
-    border-bottom: 1px solid lightgrey;
-}
-
-/* MAIN INFO */
-.ms_main-info {
-    padding: var(--section-padding) 0;
-    background-color: #3a546d;
+form .btn:hover {
+    color: #1abc9c;
+    background-color: white;
+    border-color: #1abc9c;
+    box-shadow: 0 0px 5px #1abc9c;
 }
 
 /* FOOTER */
-footer {
+footer p {
+    font-weight: 400;
+}
+/* FOOTER INFO */
+.ms_footer-info {
+    padding: var(--section-padding) 0;
+    background-color: #3a546d;
+}
+.ms_footer-socials a {
+    margin: 0 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+.ms_footer-socials i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ms_footer-socials a:hover {
+    color: #1abc9c;
+    border-color: #1abc9c;
+}
+.ms_start {
+    color: #1abc9c;
+}
+.ms_start:hover {
+    text-decoration: underline;
+}
+/* FOOTER BOTTOM */
+.ms_footer-bottom {
     padding: var(--section-padding) 0;
     background-color: #2c3e50;
+    font-size: 0.7rem;
 }
