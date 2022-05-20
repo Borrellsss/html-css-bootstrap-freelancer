@@ -1,11 +1,4 @@
 /* DEBUG */
-.ms_jumbotron {
-    background-color: #1abc9c;
-}
-.ms_container {
-    background-color: aqua;
-    height: 100%;
-}
 .ms_card {
     background-color: yellow;
 }
@@ -37,8 +30,15 @@ a {
     color: inherit;
     text-decoration: none;
 }
+a:hover {
+    color: lightskyblue;
+}
 h1 {
     font-weight: 600;
+}
+img {
+    width: 100%;
+    display: block;
 }
 
 /* HEADER */
@@ -72,7 +72,7 @@ header .d-flex > li {
     content: "";
     display: inline-block;
     width: 10vw;
-    height: 3px;
+    height: 3.5px;
     border-radius: 3px;
     background-color: white;
     position: absolute;
@@ -80,27 +80,36 @@ header .d-flex > li {
     right: 50%;
     transform: translate(-1.5rem, -50%);
 }
+.ms_portfolio .ms_star::before,
+.ms_contact-me .ms_star::before {
+    background-color: #333;
+}
 .ms_star::after {
     content: "";
     display: inline-block;
     width: 10vw;
-    height: 3px;
+    height: 3.5px;
     border-radius: 3px;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(+1.5rem, -50%);
-
+}
+.ms_portfolio .ms_star::after,
+.ms_contact-me .ms_star::after {
+    background-color: #333;
 }
 
 /* JUMBOTRON */
 .ms_jumbotron {
     padding: var(--section-padding);
+    background-color: #1abc9c;
 }
 .ms_jumbotron img {
     margin-bottom: 0.8rem;
     max-width: 250px;
+    display: inline-block;
 }
 
 /* PORTFOLIO */
@@ -108,7 +117,9 @@ header .d-flex > li {
     padding: var(--section-padding) 0;
     color: var(--txt-color);
 }
-
+.ms_portfolio img {
+    border-radius: 1rem;
+}
 /* ABOUT */
 .ms_about {
     padding: var(--section-padding) 0;
