@@ -12,12 +12,15 @@
 .ms_btn {
     margin-top: var(--section-margin);
 }
+
 /* VARIABLES */
 :root {
     --section-margin: 0.5rem;
     --section-padding: 2rem;
+    --custom-star-margin: 0.8rem;
     --txt-color: #333;
 }
+
 /* COMMON */
 body {
     color: white;
@@ -33,6 +36,9 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+h1 {
+    font-weight: 600;
 }
 
 /* HEADER */
@@ -57,14 +63,44 @@ header .d-flex > li {
 
 /* MAIN */
 .ms_star {
-    margin-bottom: 1rem;
+    margin-bottom: var(--custom-star-margin);
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
 }
+.ms_star::before {
+    content: "";
+    display: inline-block;
+    width: 10vw;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-1.5rem, -50%);
+}
+.ms_star::after {
+    content: "";
+    display: inline-block;
+    width: 10vw;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(+1.5rem, -50%);
+
+}
+
 /* JUMBOTRON */
 .ms_jumbotron {
-    height: 70vh;
+    padding: var(--section-padding);
 }
-.ms_jumbotron .ms_container {
-    max-width: 600px;
+.ms_jumbotron img {
+    margin-bottom: 0.8rem;
+    max-width: 250px;
 }
 
 /* PORTFOLIO */
